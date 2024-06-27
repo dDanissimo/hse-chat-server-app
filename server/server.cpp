@@ -12,7 +12,10 @@
 #include <thread>
 
 using namespace boost::placeholders;
-
+/**
+ * @brief Получение текущего временного штампа.
+ * @return Временной штамп в виде строки.
+ */
 std::string getTimestamp() {
   time_t t = time(0);
   struct tm *now = localtime(&t);
@@ -24,7 +27,10 @@ std::string getTimestamp() {
      << std::setfill('0') << std::setw(2) << now->tm_sec << "] ";
   return ss.str();
 }
-
+/**
+ * @brief Логирование сообщения в файл.
+ * @param message Сообщение для логирования.
+ */
 void log(const std::string &message) {
   std::ofstream log_file("server.log", std::ios::app);
   if (log_file.is_open()) {
