@@ -1,5 +1,5 @@
-/home/archangel/ChatServerClient/build/CMakeFiles/chat_server.dir
-/home/archangel/ChatServerClient/build/CMakeFiles/chat_client.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/server.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/client.dir
 /home/archangel/ChatServerClient/build/CMakeFiles/test_client.dir
 /home/archangel/ChatServerClient/build/CMakeFiles/test_server.dir
 /home/archangel/ChatServerClient/build/CMakeFiles/test.dir

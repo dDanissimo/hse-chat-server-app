@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/test_server.dir/tests/test_server.cpp.o -o test_server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0 
+/usr/bin/c++ -g CMakeFiles/test_server.dir/tests/test_server.cpp.o CMakeFiles/test_server.dir/server/server.cpp.o -o test_server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0 

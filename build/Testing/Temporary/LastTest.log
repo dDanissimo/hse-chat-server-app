@@ -1,83 +1,59 @@
-Start testing: Jun 27 10:28 MSK
+Start testing: Jun 27 16:50 MSK
 ----------------------------------------------------------
 1/2 Testing: test_client
 1/2 Test: test_client
 Command: "/home/archangel/ChatServerClient/build/test_client"
 Directory: /home/archangel/ChatServerClient/build
-"test_client" start time: Jun 27 10:28 MSK
+"test_client" start time: Jun 27 16:50 MSK
 Output:
 ----------------------------------------------------------
 [doctest] doctest version is "2.4.11"
 [doctest] run with "--help" for options
 ===============================================================================
-/home/archangel/ChatServerClient/tests/test_client.cpp:94:
-TEST CASE:  Создание клиента
-  Отрицательный тест
-
-/home/archangel/ChatServerClient/tests/test_client.cpp:109: FATAL ERROR: Expected exception not thrown
-
-/home/archangel/ChatServerClient/tests/test_client.cpp:114: FATAL ERROR: Unexpected exception type thrown
-
-===============================================================================
-/home/archangel/ChatServerClient/tests/test_client.cpp:119:
-TEST CASE:  Запись и закрытие клиента
-  Отрицательный тест
-
-/home/archangel/ChatServerClient/tests/test_client.cpp:133: ERROR: CHECK_THROWS( client->write("") ) did NOT throw at all!
-
-===============================================================================
-/home/archangel/ChatServerClient/tests/test_client.cpp:136:
-TEST CASE:  Подключение клиента
-  Отрицательный тест
-
-/home/archangel/ChatServerClient/tests/test_client.cpp:136: ERROR: test case THREW exception: exception thrown in subcase - will translate later when the whole test case has been exited (cannot translate while there is an active exception)
-
-===============================================================================
-/home/archangel/ChatServerClient/tests/test_client.cpp:136:
-TEST CASE:  Подключение клиента
-
-DEEPEST SUBCASE STACK REACHED (DIFFERENT FROM THE CURRENT ONE):
-  Отрицательный тест
-
-/home/archangel/ChatServerClient/tests/test_client.cpp:136: ERROR: test case THREW exception: resolve: Host not found (authoritative)
-
-===============================================================================
-[doctest] test cases: 3 | 0 passed | 3 failed | 0 skipped
-[doctest] assertions: 7 | 4 passed | 3 failed |
-[doctest] Status: FAILURE!
+[doctest] test cases: 3 | 3 passed | 0 failed | 0 skipped
+[doctest] assertions: 8 | 8 passed | 0 failed |
+[doctest] Status: SUCCESS!
 <end of output>
-Test time =   7.37 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"test_client" end time: Jun 27 10:28 MSK
-"test_client" time elapsed: 00:00:07
+Test Passed.
+"test_client" end time: Jun 27 16:50 MSK
+"test_client" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 2/2 Testing: test_server
 2/2 Test: test_server
 Command: "/home/archangel/ChatServerClient/build/test_server"
 Directory: /home/archangel/ChatServerClient/build
-"test_server" start time: Jun 27 10:28 MSK
+"test_server" start time: Jun 27 16:50 MSK
 Output:
 ----------------------------------------------------------
 [doctest] doctest version is "2.4.11"
 [doctest] run with "--help" for options
 ===============================================================================
-/home/archangel/ChatServerClient/tests/test_server.cpp:86:
-TEST CASE:  Start server
+/home/archangel/ChatServerClient/tests/test_server.cpp:28:
+TEST CASE:  Обработка подключения участника
+  Отрицательный тест: ошибка подключения
 
-/home/archangel/ChatServerClient/tests/test_server.cpp:86: FATAL ERROR: test case CRASHED: SIGSEGV - Segmentation violation signal
+/home/archangel/ChatServerClient/tests/test_server.cpp:41: ERROR: CHECK_THROWS_AS( participant->nicknameHandler(ec), std::runtime_error ) did NOT throw at all!
 
 ===============================================================================
-[doctest] test cases: 1 | 0 passed | 1 failed | 2 skipped
-[doctest] assertions: 1 | 1 passed | 0 failed |
+/home/archangel/ChatServerClient/tests/test_server.cpp:45:
+TEST CASE:  Обработка сообщений участника
+  Отрицательный тест: ошибка чтения сообщения
+
+/home/archangel/ChatServerClient/tests/test_server.cpp:58: ERROR: CHECK_THROWS_AS( participant->readHandler(ec), std::runtime_error ) did NOT throw at all!
+
+===============================================================================
+[doctest] test cases: 3 | 1 passed | 2 failed | 0 skipped
+[doctest] assertions: 6 | 4 passed | 2 failed |
 [doctest] Status: FAILURE!
 <end of output>
-Test time =   0.03 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Failed.
-"test_server" end time: Jun 27 10:28 MSK
+"test_server" end time: Jun 27 16:50 MSK
 "test_server" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 27 10:28 MSK
+End testing: Jun 27 16:50 MSK

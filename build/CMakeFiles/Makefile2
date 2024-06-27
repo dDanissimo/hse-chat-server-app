@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/archangel/ChatServerClient/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/chat_server.dir/all
-all: CMakeFiles/chat_client.dir/all
+all: CMakeFiles/server.dir/all
+all: CMakeFiles/client.dir/all
 all: CMakeFiles/test_client.dir/all
 all: CMakeFiles/test_server.dir/all
 all: _deps/json-build/all
@@ -75,8 +75,8 @@ preinstall: _deps/json-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/chat_server.dir/clean
-clean: CMakeFiles/chat_client.dir/clean
+clean: CMakeFiles/server.dir/clean
+clean: CMakeFiles/client.dir/clean
 clean: CMakeFiles/test_client.dir/clean
 clean: CMakeFiles/test_server.dir/clean
 clean: _deps/json-build/clean
@@ -98,56 +98,56 @@ _deps/json-build/clean:
 .PHONY : _deps/json-build/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/chat_server.dir
+# Target rules for target CMakeFiles/server.dir
 
 # All Build rule for target.
-CMakeFiles/chat_server.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=3,4 "Built target chat_server"
-.PHONY : CMakeFiles/chat_server.dir/all
+CMakeFiles/server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=3,4 "Built target server"
+.PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/chat_server.dir/rule: cmake_check_build_system
+CMakeFiles/server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/chat_server.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 0
-.PHONY : CMakeFiles/chat_server.dir/rule
+.PHONY : CMakeFiles/server.dir/rule
 
 # Convenience name for target.
-chat_server: CMakeFiles/chat_server.dir/rule
-.PHONY : chat_server
+server: CMakeFiles/server.dir/rule
+.PHONY : server
 
 # clean rule for target.
-CMakeFiles/chat_server.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/clean
-.PHONY : CMakeFiles/chat_server.dir/clean
+CMakeFiles/server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
+.PHONY : CMakeFiles/server.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/chat_client.dir
+# Target rules for target CMakeFiles/client.dir
 
 # All Build rule for target.
-CMakeFiles/chat_client.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=1,2 "Built target chat_client"
-.PHONY : CMakeFiles/chat_client.dir/all
+CMakeFiles/client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=1,2 "Built target client"
+.PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/chat_client.dir/rule: cmake_check_build_system
+CMakeFiles/client.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/chat_client.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 0
-.PHONY : CMakeFiles/chat_client.dir/rule
+.PHONY : CMakeFiles/client.dir/rule
 
 # Convenience name for target.
-chat_client: CMakeFiles/chat_client.dir/rule
-.PHONY : chat_client
+client: CMakeFiles/client.dir/rule
+.PHONY : client
 
 # clean rule for target.
-CMakeFiles/chat_client.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/clean
-.PHONY : CMakeFiles/chat_client.dir/clean
+CMakeFiles/client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clean
+.PHONY : CMakeFiles/client.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_client.dir
@@ -156,12 +156,12 @@ CMakeFiles/chat_client.dir/clean:
 CMakeFiles/test_client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=5,6 "Built target test_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=5,6,7 "Built target test_client"
 .PHONY : CMakeFiles/test_client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_client.dir/rule
@@ -182,12 +182,12 @@ CMakeFiles/test_client.dir/clean:
 CMakeFiles/test_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=7,8 "Built target test_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/archangel/ChatServerClient/build/CMakeFiles --progress-num=8,9,10 "Built target test_server"
 .PHONY : CMakeFiles/test_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/archangel/ChatServerClient/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_server.dir/rule

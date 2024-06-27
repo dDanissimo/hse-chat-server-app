@@ -127,30 +127,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named chat_server
+# Target rules for targets named server
 
 # Build rule for target.
-chat_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat_server
-.PHONY : chat_server
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-chat_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/build
-.PHONY : chat_server/fast
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
 
 #=============================================================================
-# Target rules for targets named chat_client
+# Target rules for targets named client
 
 # Build rule for target.
-chat_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat_client
-.PHONY : chat_client
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
 
 # fast build rule for target.
-chat_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/build
-.PHONY : chat_client/fast
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 #=============================================================================
 # Target rules for targets named test_client
@@ -178,53 +178,59 @@ test_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/build
 .PHONY : test_server/fast
 
-client/chat_client.o: client/chat_client.cpp.o
-.PHONY : client/chat_client.o
+client/client.o: client/client.cpp.o
+.PHONY : client/client.o
 
 # target to build an object file
-client/chat_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/client/chat_client.cpp.o
-.PHONY : client/chat_client.cpp.o
+client/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/client/client.cpp.o
+.PHONY : client/client.cpp.o
 
-client/chat_client.i: client/chat_client.cpp.i
-.PHONY : client/chat_client.i
+client/client.i: client/client.cpp.i
+.PHONY : client/client.i
 
 # target to preprocess a source file
-client/chat_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/client/chat_client.cpp.i
-.PHONY : client/chat_client.cpp.i
+client/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/client/client.cpp.i
+.PHONY : client/client.cpp.i
 
-client/chat_client.s: client/chat_client.cpp.s
-.PHONY : client/chat_client.s
+client/client.s: client/client.cpp.s
+.PHONY : client/client.s
 
 # target to generate assembly for a file
-client/chat_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/client/chat_client.cpp.s
-.PHONY : client/chat_client.cpp.s
+client/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client/client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/client/client.cpp.s
+.PHONY : client/client.cpp.s
 
-server/chat_server.o: server/chat_server.cpp.o
-.PHONY : server/chat_server.o
+server/server.o: server/server.cpp.o
+.PHONY : server/server.o
 
 # target to build an object file
-server/chat_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/server/chat_server.cpp.o
-.PHONY : server/chat_server.cpp.o
+server/server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/server.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/server/server.cpp.o
+.PHONY : server/server.cpp.o
 
-server/chat_server.i: server/chat_server.cpp.i
-.PHONY : server/chat_server.i
+server/server.i: server/server.cpp.i
+.PHONY : server/server.i
 
 # target to preprocess a source file
-server/chat_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/server/chat_server.cpp.i
-.PHONY : server/chat_server.cpp.i
+server/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/server.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/server/server.cpp.i
+.PHONY : server/server.cpp.i
 
-server/chat_server.s: server/chat_server.cpp.s
-.PHONY : server/chat_server.s
+server/server.s: server/server.cpp.s
+.PHONY : server/server.s
 
 # target to generate assembly for a file
-server/chat_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/server/chat_server.cpp.s
-.PHONY : server/chat_server.cpp.s
+server/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server/server.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_server.dir/build.make CMakeFiles/test_server.dir/server/server.cpp.s
+.PHONY : server/server.cpp.s
 
 tests/test_client.o: tests/test_client.cpp.o
 .PHONY : tests/test_client.o
@@ -283,16 +289,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... chat_client"
-	@echo "... chat_server"
+	@echo "... client"
+	@echo "... server"
 	@echo "... test_client"
 	@echo "... test_server"
-	@echo "... client/chat_client.o"
-	@echo "... client/chat_client.i"
-	@echo "... client/chat_client.s"
-	@echo "... server/chat_server.o"
-	@echo "... server/chat_server.i"
-	@echo "... server/chat_server.s"
+	@echo "... client/client.o"
+	@echo "... client/client.i"
+	@echo "... client/client.s"
+	@echo "... server/server.o"
+	@echo "... server/server.i"
+	@echo "... server/server.s"
 	@echo "... tests/test_client.o"
 	@echo "... tests/test_client.i"
 	@echo "... tests/test_client.s"

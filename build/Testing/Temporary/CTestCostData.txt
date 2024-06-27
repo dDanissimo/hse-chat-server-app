@@ -1,5 +1,4 @@
-test_client 0 0
+test_client 3 0.0024064
 test_server 0 0
 ---
-test_client
 test_server

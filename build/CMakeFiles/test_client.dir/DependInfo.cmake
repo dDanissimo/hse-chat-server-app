@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/archangel/ChatServerClient/client/client.cpp" "CMakeFiles/test_client.dir/client/client.cpp.o" "gcc" "CMakeFiles/test_client.dir/client/client.cpp.o.d"
   "/home/archangel/ChatServerClient/tests/test_client.cpp" "CMakeFiles/test_client.dir/tests/test_client.cpp.o" "gcc" "CMakeFiles/test_client.dir/tests/test_client.cpp.o.d"
   )
 
