@@ -1,4 +1,4 @@
-# Chat Server and Client
+# Chat Server and Client ⚠️ (не реализован полностью)
 
 Этот проект реализует простой чат-сервер и клиент с использованием библиотеки Boost.Asio.
 
@@ -12,7 +12,7 @@
 
 1. Клонируйте репозиторий:
     ```sh
-    git clone <URL репозитория>
+    git clone https://github.com/dDanissimo/hse-chat-server-app.git
     ```
 
 2. Перейдите в директорию проекта:
@@ -41,14 +41,14 @@
 
 Для запуска сервера выполните:
 ```sh
-./chat_server <port>
+./server <port>
 ```
 
 ### Клиент
 Для запуска клиента выполните:
 
 ```sh
-./chat_client <nickname> <host> <port>
+./client <nickname> <host> <port>
 ```
 
 ### Тестирование
