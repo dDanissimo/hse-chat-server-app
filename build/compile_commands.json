@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/archangel/ChatServerClient/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_BIND_GLOBAL_PLACEHOLDERS -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -DSIGSTKSZ=8192 -I/home/archangel/ChatServerClient/external -I/home/archangel/ChatServerClient/external/doctest -I/home/archangel/ChatServerClient/common -I/home/archangel/ChatServerClient/build/_deps/json-src/single_include -g -std=gnu++14 -o CMakeFiles/chat_server.dir/server/chat_server.cpp.o -c /home/archangel/ChatServerClient/server/chat_server.cpp",
+  "file": "/home/archangel/ChatServerClient/server/chat_server.cpp"
+},
+{
+  "directory": "/home/archangel/ChatServerClient/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_BIND_GLOBAL_PLACEHOLDERS -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -DSIGSTKSZ=8192 -I/home/archangel/ChatServerClient/external -I/home/archangel/ChatServerClient/external/doctest -I/home/archangel/ChatServerClient/common -I/home/archangel/ChatServerClient/build/_deps/json-src/single_include -g -std=gnu++14 -o CMakeFiles/chat_client.dir/client/chat_client.cpp.o -c /home/archangel/ChatServerClient/client/chat_client.cpp",
+  "file": "/home/archangel/ChatServerClient/client/chat_client.cpp"
+},
+{
+  "directory": "/home/archangel/ChatServerClient/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_BIND_GLOBAL_PLACEHOLDERS -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -DSIGSTKSZ=8192 -I/home/archangel/ChatServerClient/external -I/home/archangel/ChatServerClient/external/doctest -I/home/archangel/ChatServerClient/common -I/home/archangel/ChatServerClient/build/_deps/json-src/single_include -g -std=gnu++14 -o CMakeFiles/test_client.dir/tests/test_client.cpp.o -c /home/archangel/ChatServerClient/tests/test_client.cpp",
+  "file": "/home/archangel/ChatServerClient/tests/test_client.cpp"
+},
+{
+  "directory": "/home/archangel/ChatServerClient/build",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_BIND_GLOBAL_PLACEHOLDERS -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -DSIGSTKSZ=8192 -I/home/archangel/ChatServerClient/external -I/home/archangel/ChatServerClient/external/doctest -I/home/archangel/ChatServerClient/common -I/home/archangel/ChatServerClient/build/_deps/json-src/single_include -g -std=gnu++14 -o CMakeFiles/test_server.dir/tests/test_server.cpp.o -c /home/archangel/ChatServerClient/tests/test_server.cpp",
+  "file": "/home/archangel/ChatServerClient/tests/test_server.cpp"
+}
+]

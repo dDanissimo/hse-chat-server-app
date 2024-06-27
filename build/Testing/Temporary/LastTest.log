@@ -1,0 +1,83 @@
+Start testing: Jun 27 10:28 MSK
+----------------------------------------------------------
+1/2 Testing: test_client
+1/2 Test: test_client
+Command: "/home/archangel/ChatServerClient/build/test_client"
+Directory: /home/archangel/ChatServerClient/build
+"test_client" start time: Jun 27 10:28 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.11"
+[doctest] run with "--help" for options
+===============================================================================
+/home/archangel/ChatServerClient/tests/test_client.cpp:94:
+TEST CASE:  Создание клиента
+  Отрицательный тест
+
+/home/archangel/ChatServerClient/tests/test_client.cpp:109: FATAL ERROR: Expected exception not thrown
+
+/home/archangel/ChatServerClient/tests/test_client.cpp:114: FATAL ERROR: Unexpected exception type thrown
+
+===============================================================================
+/home/archangel/ChatServerClient/tests/test_client.cpp:119:
+TEST CASE:  Запись и закрытие клиента
+  Отрицательный тест
+
+/home/archangel/ChatServerClient/tests/test_client.cpp:133: ERROR: CHECK_THROWS( client->write("") ) did NOT throw at all!
+
+===============================================================================
+/home/archangel/ChatServerClient/tests/test_client.cpp:136:
+TEST CASE:  Подключение клиента
+  Отрицательный тест
+
+/home/archangel/ChatServerClient/tests/test_client.cpp:136: ERROR: test case THREW exception: exception thrown in subcase - will translate later when the whole test case has been exited (cannot translate while there is an active exception)
+
+===============================================================================
+/home/archangel/ChatServerClient/tests/test_client.cpp:136:
+TEST CASE:  Подключение клиента
+
+DEEPEST SUBCASE STACK REACHED (DIFFERENT FROM THE CURRENT ONE):
+  Отрицательный тест
+
+/home/archangel/ChatServerClient/tests/test_client.cpp:136: ERROR: test case THREW exception: resolve: Host not found (authoritative)
+
+===============================================================================
+[doctest] test cases: 3 | 0 passed | 3 failed | 0 skipped
+[doctest] assertions: 7 | 4 passed | 3 failed |
+[doctest] Status: FAILURE!
+<end of output>
+Test time =   7.37 sec
+----------------------------------------------------------
+Test Failed.
+"test_client" end time: Jun 27 10:28 MSK
+"test_client" time elapsed: 00:00:07
+----------------------------------------------------------
+
+2/2 Testing: test_server
+2/2 Test: test_server
+Command: "/home/archangel/ChatServerClient/build/test_server"
+Directory: /home/archangel/ChatServerClient/build
+"test_server" start time: Jun 27 10:28 MSK
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.11"
+[doctest] run with "--help" for options
+===============================================================================
+/home/archangel/ChatServerClient/tests/test_server.cpp:86:
+TEST CASE:  Start server
+
+/home/archangel/ChatServerClient/tests/test_server.cpp:86: FATAL ERROR: test case CRASHED: SIGSEGV - Segmentation violation signal
+
+===============================================================================
+[doctest] test cases: 1 | 0 passed | 1 failed | 2 skipped
+[doctest] assertions: 1 | 1 passed | 0 failed |
+[doctest] Status: FAILURE!
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_server" end time: Jun 27 10:28 MSK
+"test_server" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 27 10:28 MSK

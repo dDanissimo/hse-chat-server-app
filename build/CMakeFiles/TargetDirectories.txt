@@ -1,0 +1,10 @@
+/home/archangel/ChatServerClient/build/CMakeFiles/chat_server.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/chat_client.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/test_client.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/test_server.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/test.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/edit_cache.dir
+/home/archangel/ChatServerClient/build/CMakeFiles/rebuild_cache.dir
+/home/archangel/ChatServerClient/build/_deps/json-build/CMakeFiles/test.dir
+/home/archangel/ChatServerClient/build/_deps/json-build/CMakeFiles/edit_cache.dir
+/home/archangel/ChatServerClient/build/_deps/json-build/CMakeFiles/rebuild_cache.dir
